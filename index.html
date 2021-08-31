@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="buttons()">
+    <main>
+        <div class="reset-alert off">
+            <div id="background">
+                <h1>Tem certeza que deseja reiniciar o cronômetro sinistro?</h1>
+                <div class="butao-alert">
+                    <button class="sim" onclick="reset()">Sim</button>
+                    <button class="nao" onclick="reset_alert()">Não</button>
+                </div>
+            </div>
+        </div>
+        <h1>Crônometro</h1>
+        <div class="timer">
+            <p id="min">00</p><p>:</p>
+            <p id="sec">00</p><p>;</p>
+            <p id="ms">00</p>
+        </div>
+        <div class="buttons">
+            <button class="iniciar" onclick="iniciar()"><p>INICIAR</p><div class="reflexo-i"></div></button>
+            <button class="pausar" onclick="pausar()"><p>PAUSAR</p><div class="reflexo-p"></div></button>
+            <button class="parar" onclick="reset_alert()"><p>REINICIAR</p><div class="reflexo-pa"></div></button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
