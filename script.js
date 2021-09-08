@@ -46,18 +46,22 @@ function buttons(){
 }
 
 function reset_alert(){
-    document.querySelector('main div.buttons button.iniciar P').innerHTML = 'RETOMAR'
-    clearInterval(start)
-    rodando = true
-
-    let alert = document.querySelector('main div.reset-alert').classList
-
-    if (alert == 'reset-alert on'){
-        alert.remove('on')
-        alert.add('off')
+    if (miliseconds == 00 && seconds == 00 && minutes == 00){
+        return null
     } else{
-        alert.remove('off')
-        alert.add('on')
+        document.querySelector('main div.buttons button.iniciar P').innerHTML = 'RETOMAR'
+        clearInterval(start)
+        rodando = true
+    
+        let alert = document.querySelector('main div.reset-alert').classList
+    
+        if (alert == 'reset-alert on'){
+            alert.remove('on')
+            alert.add('off')
+        } else{
+            alert.remove('off')
+            alert.add('on')
+        }
     }
 }
 
@@ -112,11 +116,15 @@ function iniciar(){
 }
 
 function pausar(){
-    document.querySelector('main div.buttons button.iniciar p').innerHTML = 'RETOMAR'
+    if (miliseconds == 00 && seconds == 00 && minutes == 00){
+        return null
+    } else{
+        document.querySelector('main div.buttons button.iniciar p').innerHTML = 'RETOMAR'
+        
+        rodando = true
 
-    rodando = true
-
-    clearInterval(start)
+        clearInterval(start)
+    }
 }
 
 function reset(){

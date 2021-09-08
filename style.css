@@ -41,6 +41,11 @@ main div.timer{
 
 main div.timer p{
     margin: 1rem;
+
+    display: flex;
+    justify-content: center;
+
+    width: 6rem;
 }
 
 main div.buttons{
