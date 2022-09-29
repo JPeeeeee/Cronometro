@@ -9,4 +9,4 @@ Esse foi o primeiro projeto no qual eu pude utilizar meus conhecimentos de JavaS
 
 Features simples de um crônometro: iniciar, pausar e reiniciar.
 
-![alt text](https://imgur.com/ool4l0j)
+![alt text](https://i.imgur.com/ool4l0j.png)
