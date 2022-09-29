@@ -13,12 +13,15 @@ Features simples de um crônometro: iniciar, pausar e reiniciar.
 
 ## Features
 
+# Botão iniciar
 Assim que o cronômetro é pausado, o botão de iniciar se transforma no botão de retomada.
 
 ![alt text](https://i.imgur.com/8iGlJc9.png)
 
+# Reiniciar cronômetro
 O botão de reiniciar abre uma caixa de confirmação para o usuário ter certeza da ação que será feita.
 
 ![alt text](https://i.imgur.com/lAMkqrW.png)
 
+# CAixa de confirmação
 Clicando em 'sim', o cronometro volta ao estado inicial. Caso contrário, nada acontece e a caixa de confirmação se fecha.
